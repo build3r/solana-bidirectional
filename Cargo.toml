@@ -1,0 +1,19 @@
+[package]
+name = "Bi-Directional"
+version = "1.0.0"
+description = "Bidirection payments"
+edition = "2018"
+
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.22.0"
+smart-wallet = "0.7.0"
+anchor-spl = "0.22.0"
+serum-multisig = {git = "https://github.com/project-serum/multisig/"}
